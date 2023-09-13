@@ -1,2 +1,7 @@
 # homebrew-tap
-Homebrew Tap for neetoCI 1.0 Command Line Interface
+
+Homebrew Formulae to @neetoci cli binaries
+
+```sh
+brew install bigbinary/tap/sem
+```
