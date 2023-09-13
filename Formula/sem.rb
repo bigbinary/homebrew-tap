@@ -5,20 +5,20 @@
 class Sem < Formula
   desc "neetoCI 1.0 command line interface."
   homepage "https://neetoci.com"
-  version "1.0.0"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.0.0/sem_Darwin_arm64.tar.gz"
-      sha256 "001fe2063413832073a9f6844c9f63f7746d6844756babf04be0a3b78cad4bbd"
+      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v0.1.0/sem_Darwin_arm64.tar.gz"
+      sha256 "0e4823eb9e5a63d785193c6f7948f3cb7e0915b9b5878cf65cc5d571ba10f150"
 
       def install
         bin.install "sem"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.0.0/sem_Darwin_x86_64.tar.gz"
-      sha256 "9134d8a678dde51f8e3c7222eed3b759f0fb3d573ba5d6ddc1190efa9ad8b247"
+      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v0.1.0/sem_Darwin_x86_64.tar.gz"
+      sha256 "f0888b8bcab386cb4fab61a8aba84915f37deae816b462c6c8ff40322320073d"
 
       def install
         bin.install "sem"
@@ -28,16 +28,16 @@ class Sem < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.0.0/sem_Linux_arm64.tar.gz"
-      sha256 "63b0e8e2eb06d45a85e1b0c37c755529c284ca34cf2bdbc20dceab318374244e"
+      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v0.1.0/sem_Linux_arm64.tar.gz"
+      sha256 "14af6330d33360ee5556bc941a57959ced3e3dfe4696786c02407da721d0a6f0"
 
       def install
         bin.install "sem"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.0.0/sem_Linux_x86_64.tar.gz"
-      sha256 "cb200ef192da3d9eac5073a3fc183084b8a25da0ff3129b5478445c8eacbe0e7"
+      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v0.1.0/sem_Linux_x86_64.tar.gz"
+      sha256 "2560ad83cbc49d013eb81b994db5d9e0aa767c3b275e88f210e61577d30c5cfd"
 
       def install
         bin.install "sem"
