@@ -5,20 +5,20 @@
 class Ncci < Formula
   desc "neetoCI 1.0 command line interface."
   homepage "https://neetoci.com"
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.1.0/ncci_Darwin_arm64.tar.gz"
-      sha256 "9d2e07989ee624a6973af111fe32924988141b521c19101806d4d0c2ba09e737"
+      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.1.1/ncci_Darwin_arm64.tar.gz"
+      sha256 "782a79ad77d8de756ba934eb1d8885964ee96e85cd61c3306a2081ac14ff9517"
 
       def install
         bin.install "ncci"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.1.0/ncci_Darwin_x86_64.tar.gz"
-      sha256 "84f78685362900a58f754a5734cd28e8c8ca049196b1ce560f4c62718365dac7"
+      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.1.1/ncci_Darwin_x86_64.tar.gz"
+      sha256 "c3bb91e8503fd4ba337e6abc74212e75c8f2e285bf59c8d50b4ef9d628ed1bad"
 
       def install
         bin.install "ncci"
@@ -28,16 +28,16 @@ class Ncci < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.1.0/ncci_Linux_arm64.tar.gz"
-      sha256 "3cf8c93f05583f0741855a9f3de4169b35ea9d7228818ff85db8e21f4e57e323"
+      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.1.1/ncci_Linux_arm64.tar.gz"
+      sha256 "005c884370013a7da4f5e1980818cb6a719e9a4b5f260c4571484a2c078dfd80"
 
       def install
         bin.install "ncci"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.1.0/ncci_Linux_x86_64.tar.gz"
-      sha256 "7c5639d606beae2c0160f23e13963871329737c39335000edd5a91327617fb74"
+      url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.1.1/ncci_Linux_x86_64.tar.gz"
+      sha256 "82941351175ea1c362585bf4bcc3d2a6fba1e3efcbeaca655566d031f3586583"
 
       def install
         bin.install "ncci"
