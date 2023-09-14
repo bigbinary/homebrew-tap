@@ -10,7 +10,7 @@ class Ncci < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.0/ncci_Darwin_arm64.tar.gz"
-      sha256 "c2dd8d90602d2994aeea6975587b2ca9f69e43e4b57e0bedf2490b03a807b5a6"
+      sha256 "0ff94b978ab7d6592dd242cf2800bd4f668599a2a8edbca2885cc742deee27c2"
 
       def install
         bin.install "ncci"
@@ -18,7 +18,7 @@ class Ncci < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.0/ncci_Darwin_x86_64.tar.gz"
-      sha256 "4b29cc096bab17cb7497409bbd6e05d0468bbda228de71b9bfeafd14a4f18297"
+      sha256 "cef16969664f248189e67ec06814579667ba976009c97f63c2dc7cb07f5d1416"
 
       def install
         bin.install "ncci"
@@ -29,7 +29,7 @@ class Ncci < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.0/ncci_Linux_arm64.tar.gz"
-      sha256 "0753401fb1bcaf20b1fde4b5014798630408815ae3498f22bb9aa523688b9559"
+      sha256 "6caa1bac9e7d74686f03e22a60fa7b45a65d30521f5cc64504c15779fa2916b3"
 
       def install
         bin.install "ncci"
@@ -37,7 +37,7 @@ class Ncci < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/bigbinary/neeto-ci-cli/releases/download/v1.0/ncci_Linux_x86_64.tar.gz"
-      sha256 "efc6276e06012bb631cf2f9fcf0b084300c36b8d386b8f392a0c99aa71b9ff91"
+      sha256 "4d0108591f4ff7118c81abd25f175456bd43d58567fbf77a3deb77bbf8948cbc"
 
       def install
         bin.install "ncci"
