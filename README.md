@@ -3,5 +3,5 @@
 Homebrew Formulae to @neetoci cli binaries
 
 ```sh
-brew install bigbinary/tap/sem
+brew install bigbinary/tap/ncci
 ```
